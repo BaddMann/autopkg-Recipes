@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of OBS and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>baddmann.github.com.munki.OBS</string>
+	<string>com.github.baddmann.munki.OBS</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
@@ -35,7 +35,7 @@
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>baddmann.github.com.download.OBS</string>
+	<string>com.github.baddmann.download.OBS</string>
 	<key>Process</key>
 	<array>
 		<dict>

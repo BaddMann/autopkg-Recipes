@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of OBS and creates a package.</string>
 	<key>Identifier</key>
-	<string>baddmann.github.com.pkg.OBS</string>
+	<string>com.github.baddmann.pkg.OBS</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>baddmann.github.com.download.OBS</string>
+	<string>com.github.baddmann.download.OBS</string>
 	<key>Process</key>
 	<array>
 		<dict>
