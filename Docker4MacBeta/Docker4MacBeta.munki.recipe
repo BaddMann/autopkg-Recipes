@@ -14,6 +14,8 @@
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>Docker4MacBeta</string>
+		<key>APPNAME</key>
+		<string>Docker</string>	
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -25,7 +27,7 @@
 			<key>developer</key>
 			<string>Docker Inc</string>
 			<key>display_name</key>
-			<string>Docker</string>
+			<string>Docker for Mac Beta</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>

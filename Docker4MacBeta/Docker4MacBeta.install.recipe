@@ -12,6 +12,8 @@
 	<dict>
 		<key>NAME</key>
 		<string>Docker4MacBeta</string>
+		<key>APPNAME</key>
+		<string>Docker</string>		
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
@@ -30,7 +32,7 @@
 						<key>destination_path</key>
 						<string>/Applications</string>
 						<key>source_item</key>
-						<string>%NAME%.app</string>
+						<string>%APPNAME%.app</string>
 					</dict>
 				</array>
 			</dict>
