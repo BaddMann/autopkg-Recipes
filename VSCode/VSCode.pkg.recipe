@@ -15,7 +15,7 @@
 		<key>BUNDLE_ID</key>
 		<string>com.microsoft.VSCode</string>
 		<key>NAME</key>
-		<string>Code</string>
+		<string>VSCode</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
