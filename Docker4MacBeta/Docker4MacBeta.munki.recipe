@@ -32,6 +32,24 @@
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
+			<key>POSTINSTALL</key>
+			<string>#!/bin/sh
+
+# assumes the following directories exist:
+# /usr/local/bin
+# /Library/PrivilegedHelperTools
+
+declare -r docker_bundle_dir=/Applications/Docker.app/Contents
+
+for tool in com.docker.frontend docker docker-compose docker-diagnose docker-machine notary; do
+    ln -sf ${docker_bundle_dir}/Resources/${tool} /usr/local/bin
+done
+
+install -m 0544 -o root -g wheel ${docker_bundle_dir}/Library/LaunchServices/com.docker.vmnetd /Library/PrivilegedHelperTools
+install -m 0644 -o root -g wheel ${docker_bundle_dir}/Resources/com.docker.vmnetd.plist /Library/LaunchDaemons
+
+launchctl load /Library/LaunchDaemons/com.docker.vmnetd.plist
+			</string>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
@@ -61,6 +79,8 @@
 				<string>%MUNKI_REPO_SUBDIR%</string>
 				<key>version_comparison_key</key>
 				<string>CFBundleVersion</string>
+				<key>postinstall_script</key>
+				<string>%POSTINSTALL%</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
