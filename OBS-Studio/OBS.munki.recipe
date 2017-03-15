@@ -6,7 +6,7 @@
 	<string>Created with Recipe Robot v1.0.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of OBS and imports it into Munki.</string>
-	<key>RELEASE_NOTES_FROM GITHUB</key>
+	<key>RELEASE_NOTES_FROM_GITHUB</key>
 	<string>%release_notes%</string>
 	<key>Identifier</key>
 	<string>com.github.baddmann.munki.OBS</string>
@@ -23,7 +23,7 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Free and open source software for video recording and live streaming. \n Release Notes: \n %RELEASE_NOTES_FROM GITHUB%</string>
+			<string>Free and open source software for video recording and live streaming. \n Release Notes: \n %RELEASE_NOTES_FROM_GITHUB%</string>
 			<key>developer</key>
 			<string>J. Bradley &amp; Associates, LLC.</string>
 			<key>display_name</key>
