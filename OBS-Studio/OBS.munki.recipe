@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v1.0.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Free and open source software for video recording and live streaming. \n Release Notes: \n %release_notes%</string>
+	<string>My attempts at OBS Deployments via AutoPKG and Munki. Stable once complete, hardly ever complete.</string>
 	<key>Identifier</key>
 	<string>com.github.baddmann.munki.OBS</string>
 	<key>Input</key>
@@ -14,6 +14,8 @@
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>OBS</string>
+		<key>DESCRIPTION</key>
+		<string>Free and open source software for video recording and live streaming.</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -21,7 +23,7 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>%Description%</string>
+			<string>%DESCRIPTION%</string>
 			<key>developer</key>
 			<string>J. Bradley &amp; Associates, LLC.</string>
 			<key>display_name</key>
