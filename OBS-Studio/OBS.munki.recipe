@@ -43,21 +43,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>installs_item_paths</key>
-				<array>
-					<string>/Applications/OBS.app</string>
-				</array>
-			</dict>
-			<key>Processor</key>
-			<string>MunkiInstallsItemsCreator</string>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>MunkiPkginfoMerger</string>
-		</dict>		
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>pkg_path</key>
 				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
