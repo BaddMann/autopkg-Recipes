@@ -43,8 +43,6 @@
 			<dict>
 				<key>installs_item_paths</key>
 				<string>/Applications/OBS.app</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiInstallsItemsCreator</string>
