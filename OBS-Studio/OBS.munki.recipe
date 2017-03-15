@@ -59,7 +59,8 @@
 				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
-				%additional_pkginfo%
+				<key>pkginfo</key>
+				<dict>%additional_pkginfo%</dict>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
