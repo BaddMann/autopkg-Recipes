@@ -43,7 +43,7 @@
 			<dict>
 				<key>installs_item_paths</key>
 				<array>
-					<string>"/Applications/OBS.app"</string>
+					<string>/Applications/OBS.app</string>
 				</array>
 			</dict>
 			<key>Processor</key>
