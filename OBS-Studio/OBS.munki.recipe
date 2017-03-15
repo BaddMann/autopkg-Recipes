@@ -6,6 +6,8 @@
 	<string>Created with Recipe Robot v1.0.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of OBS and imports it into Munki.</string>
+	<key>RELEASE_NOTES_FROM GITHUB</key>
+	<string>%release_notes%</string>
 	<key>Identifier</key>
 	<string>com.github.baddmann.munki.OBS</string>
 	<key>Input</key>
@@ -13,7 +15,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>OBS Studio</string>
+		<string>OBS</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -21,11 +23,11 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Free and open source software for video recording and live streaming.</string>
+			<string>Free and open source software for video recording and live streaming. \n Release Notes: \n %RELEASE_NOTES_FROM GITHUB%</string>
 			<key>developer</key>
 			<string>J. Bradley &amp; Associates, LLC.</string>
 			<key>display_name</key>
-			<string>OBS</string>
+			<string>OBS Studio</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
