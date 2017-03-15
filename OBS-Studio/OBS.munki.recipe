@@ -30,27 +30,6 @@
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-			<key>installs</key>
-			<array>
-				<dict>
-					<key>CFBundleIdentifier</key>
-					<string>com.obsproject.obs-studio</string>
-					<key>CFBundleName</key>
-					<string>OBS</string>
-					<key>CFBundleShortVersionString</key>
-					<string>%version%</string>
-					<key>CFBundleVersion</key>
-					<string>%version%</string>
-					<key>minosversion</key>
-					<string>10.8.5</string>
-					<key>path</key>
-					<string>/Applications/OBS.app</string>
-					<key>type</key>
-					<string>application</string>
-					<key>version_comparison_key</key>
-					<string>CFBundleShortVersionString</string>
-				</dict>
-			</array>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
@@ -59,6 +38,17 @@
 	<string>com.github.baddmann.download.OBS</string>
 	<key>Process</key>
 	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>installs_item_paths</key>
+				<string>/Applications/OBS.app</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiInstallsItemsCreator</string>
+		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
