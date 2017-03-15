@@ -43,7 +43,7 @@
 			<dict>
 				<key>installs_item_paths</key>
 				<array>
-					<string>/Applications/OBS.app</string>
+					<string>"/Applications/OBS.app"</string>
 				</array>
 				<key>version_comparison_key</key>
 					<string>CFBundleShortVersionString</string>
@@ -59,6 +59,7 @@
 				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
+				%additional_pkginfo%
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
