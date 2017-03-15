@@ -42,9 +42,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>installs_item_paths</key>
-				<dict>
+				<array>
 					<string>"/Applications/OBS.app"</string>
-				</dict>
+				</array>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiInstallsItemsCreator</string>
