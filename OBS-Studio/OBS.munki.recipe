@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v1.0.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of OBS and imports it into Munki.</string>
+	<string>My attempts at OBS Deployments via AutoPKG and Munki. Stable once complete, hardly ever complete.</string>
 	<key>Identifier</key>
 	<string>com.github.baddmann.munki.OBS</string>
 	<key>Input</key>
@@ -14,6 +14,8 @@
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>OBS</string>
+		<key>DESCRIPTION</key>
+		<string>Free and open source software for video recording and live streaming.</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -21,11 +23,11 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Observes system status, posts notifications.</string>
+			<string>%DESCRIPTION%</string>
 			<key>developer</key>
 			<string>J. Bradley &amp; Associates, LLC.</string>
 			<key>display_name</key>
-			<string>OBS</string>
+			<string>OBS Studio</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -38,6 +40,21 @@
 	<string>com.github.baddmann.download.OBS</string>
 	<key>Process</key>
 	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>installs_item_paths</key>
+				<array>
+					<string>/Applications/OBS.app</string>
+				</array>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiInstallsItemsCreator</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>MunkiPkginfoMerger</string>
+		</dict>		
 		<dict>
 			<key>Arguments</key>
 			<dict>
