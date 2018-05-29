@@ -13,7 +13,7 @@
 		<key>NAME</key>
 		<string>OBS</string>
 		<key>GITHUB_REPO</key>
-		<string>jp9000/obs-studio</string>
+		<string>obsproject/obs-studio</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
